@@ -1,0 +1,48 @@
+body{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+overflow: hidden;
+background: conic-gradient(from 90deg at 25% -10%, #ff4500,#d3f340,#7bee85,#afeeee,#7bee85 );
+}
+.container{
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalclock{
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius:2px ;
+    color:#fff ;
+    background:rgba(0,0,0,.1);
+     
+}
+.digitalclock h1{
+ display: inline-block;
+ margin: 0 10px;
+ font-weight: bold;
+ font-size:5rem ;
+}
+@media(max-width:768px){
+#bar1,#bar2{
+    display: none;
+}
+.digitalclock{
+    text-align: center;
+    width:100% ;
+}
+.digitalclock h1{
+    display: block;
+}
+}
+@media(max-width:480px){
+ 
+    .digitalclock h1{
+     font-size: 4rem;
+    }
+    }
